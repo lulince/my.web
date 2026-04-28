@@ -1,0 +1,209 @@
+body {
+    background-color:#080f18;
+}
+
+#titulo {
+    color: #e8f4ff;
+}
+
+#descripcion {
+    color: #7eb8e0;
+}
+
+.texto-principal {
+    color: #e8f4ff;
+}
+
+/*==== HEADER ====*/
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #080f18;
+    border-bottom: 0.5px solid #1a4f7a;
+    padding: 0.85rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*==== LOGO ====*/
+
+header div a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+header div a img {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+header div a span {
+    font-family: 'Cormorant Garamond', georgia, serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #e8f4ff;
+    letter-spacing: 0.02em;
+}
+
+/*==== NAV ====*/
+
+.navegacion-pri ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navegacion-pri ul li a {
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #7eb8e0;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+    border-bottom: 1.5px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.navegacion-pri ul li a:hover {
+    color: #e8f4ff;
+    border-bottom-color: #2d7bb5 ;
+}
+
+/*==== LINK ACTIVO ====*/
+
+.navegacion-pri ul li a.activo {
+    color: #e8f4ff;
+    border-bottom-color: #3ecfb2 ;
+}
+
+
+
+
+/*==== STACK GRID=====*/
+
+.stack-grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    background: #0a1520;
+    border: 0.5px solid #1a4f7a;
+    border-left: 3px solid #2d7bb5;
+    border-radius: 0 12px 12px 0;
+    padding: 1.25rem;
+}
+
+/*==== STACK CARD ====*/
+.stack-card {
+    background: #0d2137;
+    border: 0.5px solid #1a4f7a;
+    border-radius: 8px;
+    padding: 0.85rem 1rem;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.stack-card:hover {
+    background: #1a4f7a;
+    border-color: #2d7bb5;
+} 
+
+/*==== Stack tecnologico ====*/
+.section-title {
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--c-blue-dark);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+/*==== LINEA DECORATIVA ====*/
+
+.section-title::after {
+    content: '';
+    flex: 1;
+    height: 0.5px;
+    background: #1a4f7a;
+}
+
+
+
+.stack-cat {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    color: #7eb8e0;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.badge-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.badge {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    padding: 3px 9px;
+    border-radius: 4px;
+    transition: 0.2s, color 0.2s;
+}
+
+.badge--blue {
+    background: #1d3a56;
+    color: #7eb8e0;
+    border: 0.5px solid #1a4f7a;
+}
+
+.badge--slate {
+    background: #1d3a56;
+    color: #c5d9ef;
+    border: 0.5px solid #2d7bb5 ;
+}
+
+.badge--mint {
+    background: #04342c; 
+    color: #3ecfb2;
+    border: 0.5px solid #0f6e56;
+}
+
+.stack-card:hover .badge--blue { 
+  background: #0f6e56; 
+  color: #c5d9ef;
+}
+
+.stack-card:hover .badge--slate { 
+  background: #2d7bb5; 
+  color: #e8f4ff; 
+}
+
+.stack-card:hover .badge--mint { 
+  background: #0f6e56; 
+  color: #e1f5ee; 
+}
+
+/*==== TITULO; STACK TECNOLOGICO ==== */
+.section-title {
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #2d7bb5;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
