@@ -11,7 +11,89 @@ body {
 }
 
 .texto-principal {
-    color: #e8f4ff;
+    color: #7eb8e0;
+    
+}
+
+
+/*==== CITA A LIBRO ====*/
+
+.quote-hero {
+    border-left: 2px solid #2d7bb5;
+    padding: 1rem 1.25rem;
+    background-color: #0a1520;
+    border-radius: 0 8px 8px 0;
+    margin-top: 1.5rem;
+    max-width: 650px;
+}
+
+.quote-hero blockquote {
+    font-family:  'Cormorant Garamond', georgia, serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #c5d9ef;
+    line-height: 1.6;
+    margin-bottom: 0.65rem;
+}
+
+.quote-hero figcaption cite {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #2d7bb5;
+    font-style: normal;
+}
+
+
+/*==== SOCIAL LINKS ====*/
+ 
+.social-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 0.75rem;
+}
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 0.5px solid;
+    transition: all 0.2s;
+}
+
+.chip:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.3);
+}
+
+.chip svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+}
+
+.chip--linkedin {
+    background: #0d2137;
+    color: #7eb8e0;
+    border-color: #1a4f7a;
+}
+
+.chip--github {
+    background: #0d2137;
+    color: #c5d9ef;
+    border-color: #1a4f7a;
+}
+
+.chip--pinterest {
+    background: #0d2137;
+    color: #e8b4b8;
+    border-color: #4a1a1a;
 }
 
 /*==== HEADER ====*/
